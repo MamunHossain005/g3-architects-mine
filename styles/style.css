@@ -1,0 +1,664 @@
+/*---------
+    fonts 
+-----------*/
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+/*--------------------------------
+    common styles and utilities
+----------------------------------*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.btn-primary {
+    width: 180px;
+    height: 64px;
+    border-radius: 8px;
+    background-color: #FF900E;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    border: 0px;
+}
+
+/*-----------------
+    header styles
+-------------------*/
+header {
+    padding: 50px 240px;
+    background-color: rgba(255, 144, 14, 0.10);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 116px;
+}
+
+.nav-title {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.navi {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    gap: 45px;
+    list-style: none;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #424242;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.banner {
+    text-align: center;
+}
+
+.banner-title {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 45px;
+}
+
+.banner-description-hide {
+    display: none;
+    color: #727272;
+    margin-bottom: 32px;
+}
+
+.banner-description {
+    color: #727272;
+    margin-bottom: 32px;
+}
+
+.banner img {
+    height: auto;
+    width: 100%;
+    margin-top: 50px;
+}
+
+/*--------------------------
+    features list styles
+---------------------------*/
+.features-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 76px;
+    margin: 85px 301px 169px 301px;
+}
+.feature-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.feature-image img{
+    width: 100%;
+    height: auto;
+}
+
+.features-list-info {
+    display: flex;
+    align-items: center;
+}
+
+.feature-list-title {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.gray {
+    color: #727272;
+    font-weight: 500;
+}
+
+.orange {
+    color: #FF900E;
+}
+
+.feature-list-description {
+    color: #727272;
+    margin-bottom: 32px;
+}
+
+/*--------------------------
+    loving features styles
+---------------------------*/
+.loving-features-main {
+    position: relative;
+}
+
+.loving-features {
+    display: flex;
+    gap: 5%;
+    margin: 0px 15%;
+}
+
+.loving-features-title {
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+    border-left: 5px solid #FF900E;
+    padding-left: 21px;
+    margin-bottom: 24px;
+}
+
+.loving-features-description {
+    color: #727272;
+    margin-bottom: 60px;
+}
+
+.loving-feature {
+    box-shadow: 0px 0px 5px 1px rgb(233, 232, 232);
+    margin-bottom: 20px;
+    padding: 33px;
+    width: 85%;
+}
+
+.loving-feature-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.loving-features-image {
+    position: relative;
+    top: -39px;
+    width: 50%;
+    height: auto;
+}
+
+.loving-feature-btn {
+    position: absolute;
+    left: 48%;
+    top: 93%;
+    z-index: 1;
+}
+
+/*----------------------
+    some facts styles
+------------------------*/
+.some-facts {
+    margin: 130px 200px 180px 200px;
+}
+
+.facts-title {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.facts-description {
+    color: #727272;
+    margin-bottom: 100px;
+}
+
+.facts-description-without-br {
+    display: none;
+}
+
+.facts-container {
+    display: grid;
+    grid-template-columns: repeat(4, 23.5%);
+    gap: 2%;
+    padding: 0px 1%;
+}
+
+.fact {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    padding: 45px;
+    text-align: center;
+}
+
+.fact-number {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.fact-info {
+    color: #727272;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/*-----------------
+    Sponsors styles
+*/
+.sponsors {
+    text-align: center;
+    margin: 15% 10% 0px;
+}
+.sponsors-title {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.sponsors-info {
+    color: #727272;
+    margin-bottom: 50px;
+}
+
+.sponsors-info-without-br {
+    display: none;
+    margin-bottom: 50px;
+}
+
+.sponsors-logo {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10%;
+}
+
+.sponsors-logo img {
+    height: auto;
+    width: 100%;
+    filter: grayscale(100%);
+}
+
+/*-------------------
+    footer styles 
+----------------------*/
+footer {
+    margin: 10% 2% 5%;
+    padding: 2% 0px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #FFF4E7;
+    color: #424242;
+}
+
+/*------------------
+    media queries
+--------------------*/
+/* media queries for header */
+@media only screen and (max-width: 575.98px){
+    /* header styles */
+    header {
+        padding: 20px;
+    }
+
+    .navbar {
+        margin-bottom: 50px;
+    }
+
+    .nav-title {
+        font-size: 25px;
+    }
+
+    .navi {
+        display: block;
+        font-size: 21px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .banner-title {
+        font-size: 40px;
+    }
+
+    .banner-description-hide {
+        display: block;
+    }
+    
+    .banner-description {
+        display: none;
+    }
+
+    .btn-primary {
+        width: 120px;
+        height: 50px;
+        background-color: #FF900E;
+        font-size: 16px;
+    }
+
+    /* feature list styles */
+    .features-list {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+        margin: 40px;
+    }
+
+    .feature-list-title {
+        font-size: 25px;
+    }
+
+     /* loving features styles */
+     .loving-features {
+        margin: 0px 9%;
+        gap: 4%;
+    }
+
+    .loving-features-title {
+        font-size: 20px;
+    }
+
+    .loving-feature-title {
+        font-size: 18px;
+    }
+
+    .loving-feature-btn {
+        width: 120px;
+        font-size: 16px;
+    }
+
+    .loving-features-image {
+         display: none;
+    }
+
+    .loving-feature-btn {
+        top: 97%;
+        left: 45%;
+    }
+
+    /* facts styles */
+    .some-facts {
+        margin: 20px;
+    }
+
+    .facts-title {
+        font-size: 20px;
+    }
+
+    .fact-number { 
+        font-size: 20px;
+    }
+    
+    .facts-description {
+        display: none;
+    }
+
+    .facts-description-without-br {
+        display: block;
+        margin-bottom: 50px;
+    }
+
+    .facts-container {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        gap: 2%;
+    }
+        
+    .fact {
+        padding: 20px;
+    }
+
+    /* sponsors styles */
+    .sponsors {
+        margin: 80px 8%;
+    }
+
+    .sponsors-title {
+        font-size: 20px;
+    }
+
+    .sponsors-info {
+        display: none;
+    }
+
+    .sponsors-info-without-br {
+        display: block;
+    }
+
+    /* footer styles */
+    footer {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 1399.98px){
+    .nav-title, .feature-list-title, .loving-features-title,  .facts-title, 
+    .fact-number, .sponsors-title{
+        font-size: calc(25px + 20 * ((100vw - 576px)/824));
+    }
+
+    .banner-title {
+        font-size: calc(40px + 24 * ((100vw - 576px)/824));
+    }
+
+    footer {
+        font-size: calc(11px + 9 * ((100vw - 576px)/824));
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767.98px){
+    /* header styles */
+    header {
+        padding: 30px;
+    }
+
+    .navbar {
+        margin-bottom: 60px;
+    }
+
+    .navi {
+        display: block;
+        font-size: 21px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .banner-description-hide {
+        display: block;
+    }
+    
+    .banner-description {
+        display: none;
+    }
+
+    /* feature list styles */
+    .features-list {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+        margin: 80px;
+    }
+
+    /* loving features styles */
+    .loving-features {
+        margin: 0px 9%;
+        gap: 4%;
+    }
+
+    .loving-feature-btn {
+        width: 120px;
+        font-size: 16px;
+    }
+
+    .loving-features-image {
+         display: none;
+    }
+
+    .loving-feature-btn {
+        top: 95%;
+        left: 45%;
+    }
+
+    /* facts styles */
+    .some-facts {
+        margin: 50px;
+    }
+    
+    .facts-description {
+        display: none;
+    }
+
+    .facts-description-without-br {
+        display: block;
+        margin-bottom: 50px;
+    }
+
+    .facts-container {
+        gap: 2%;
+    }
+        
+    .fact {
+        padding: 20px;
+    }
+
+    /* sponsors styles */
+    .sponsors-info {
+        display: none;
+    }
+
+    .sponsors-info-without-br {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px){
+    /* header styles */
+    header {
+        padding: 50px;
+    }
+
+    .navbar {
+        margin-bottom: 80px;
+    }
+    
+    .navi {
+        display: block;
+        font-size: 30px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .banner-description {
+        display: none;
+    }
+
+    .banner-description-hide {
+        display: block;
+    }
+
+    /* feature list styles */
+    .features-list {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+        margin: 100px;
+    }
+
+    /* loving features styles */
+    .loving-features {
+        margin: 0px 9%;
+        gap: 4%;
+    }
+
+    .loving-feature-btn {
+        width: 120px;
+        font-size: 16px;
+    }
+
+    .loving-features-image {
+        display: none;
+    }
+
+    .loving-feature-btn {
+        top: 95%;
+        left: 45%;
+    }
+
+     /* facts styles */
+     .some-facts {
+        margin: 80px;
+    }
+
+    .facts-container {
+        gap: 2%;
+    }
+    
+    .fact {
+        padding: 20px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199.98px){
+    /* header styles */
+    header {
+        padding: 50px;
+    }
+
+    /* features list styles */
+    .features-list {
+        gap: 50px;
+        margin: 85px 100px 130px 100px;
+    }
+
+    /* loving features styles */
+    .loving-features {
+        margin: 0px 6%;
+        gap: 4%;
+    }
+
+    .loving-feature-btn {
+        width: 120px;
+        font-size: 16px;
+    }
+
+    /* loving features styles */
+    .loving-features {
+        margin: 0px 8%;
+    }
+
+     /* facts styles */
+    .some-facts {
+        margin: 100px;
+    }
+
+    .facts-container {
+        gap: 2%;
+    }
+
+    .fact {
+        padding: 30px;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399.98px){
+    /* header styles */
+    header {
+        padding: 50px 120px;
+    }
+
+    /* features list styles */
+    .features-list {
+        gap: 56px;
+        margin: 85px 170px 130px 170px;
+    }
+    .feature-images {
+        gap: 20px;
+    }
+
+    /* loving features styles */
+    .loving-features {
+        margin: 0px 9%;
+    }
+
+     /* facts styles */
+    .some-facts {
+        margin: 100px;
+    }
+}
